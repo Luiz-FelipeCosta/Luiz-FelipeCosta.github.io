@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Validação</title>
+    <script>
+        function Verificar( )
+        {
+            var n, i, e ;
+            // n = document.form1.txtNome.value ;
+            n = document.getElementById("txtNome").value ;
+            if ( n.length == 0 )
+            {
+                alert("Preencha o Campo nome");
+                document.form1.txtNome.style.background = "#1E90FF" ;
+                document.form1.txtNome.focus() ;
+                return false ;
+            }
+            document.form1.submit();
+
+            i = document.form1.txtIdade.value ;
+            if ( n.length == 0 )
+            {
+                alert("Preencha o Campo Idade");
+                document.form1.txtIdade.style.background = "#1E90FF" ;
+                document.form1.txtIdade.focus() ;
+                return false ;
+            }
+            document.form1.submit();
+
+            e = document.form1.txtEmail.value ;
+            if ( n.length == 0 )
+            {
+                alert("Preencha o Campo e-mail");
+                document.form1.txtEmail.style.background = "#1E90FF" ;
+                document.form1.txtEmail.focus() ;
+                return false ;
+            }
+            document.form1.submit();
+
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Cadastro</h1>
+    <form name="form1" action="gravar.jsp" method="post">
+        <fieldset>
+            <legend>Alunos</legend>
+            Nome:
+            <input type="text" name="txtNome" id="txtNome"> <br>
+            Idade:
+            <input type="text" name="txtIdade" id="txtIdade"> <br>
+            e-mail:
+            <input type="text" name="txtEmail" id="txtEmail"> <br>
+            <input type="button" value="Gravar" onclick="Verificar( )">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle> </tittle>
+        <script> // colocando o javascript no HTML.!
+            function trocar() //Comando que cria uma função
+            {
+               var cor = document.form1.cores.value; // comando var cria a variavel no javascript.!
+               document.bgColor = cor ; // document no java script mostra no site, bgColor é o plano de fundo do site.!
+            }
+        </script>
+
+    </head>
+    <body>
+    <form name="form1"> <!--Comando que cria umas opçoes de escolha para trocar cor de fundo da pagina-->
+        <select name="cores" onchange="trocar()"> <!--Comando que liga no javascript para selecionar a cor-->
+            <option value="white">Branca</option> <!--Opções de cores para o fundo do site-->
+            <option value="black">preto</option>
+            <option value="green">Verde</option>
+            <option value="red">Vermelho</option>
+            <option value="purple">Roxo</option>
+            <option value="grey">Cinza</option>
+        </select>
+    </form>
+    </body>
+</html>

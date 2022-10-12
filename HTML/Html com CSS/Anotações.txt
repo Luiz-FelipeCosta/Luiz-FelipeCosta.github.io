@@ -1,0 +1,11 @@
+comando  class é quando vou usa-lo para mais de 1 conteudo.
+
+o comando id é quando vou usar para conteudo especifico.
+
+
+comando class se inicia com .
+comando id se inicia com #
+
+
+comando padding é o espaçamento interno 
+comando 
